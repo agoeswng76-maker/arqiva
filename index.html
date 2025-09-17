@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sunday Bite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>The <span>Sunday Bite</span></h1>
+      <p>Delicious food for every mood</p>
+      <a href="#" class="btn-red">ORDER NOW</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/chicken-wings.jpg" alt="Chicken Wings">
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <div class="about-img">
+      <img src="images/burger-fries.jpg" alt="Burger and Fries">
+    </div>
+    <div class="about-text">
+      <h2>All About TSB</h2>
+      <p>We have been serving irresistible comfort food since 1999. Our mission is to keep you smiling with every bite.</p>
+      <p>Treat yourself to a feel-good meal today!</p>
+      <a href="#" class="btn-black">LEARN MORE</a>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="menu">
+    <h2>What We Offer</h2>
+    <p>Curious? Here are our most popular menu items.</p>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="images/burger.jpg" alt="Gourmet Burger">
+        <h3>GOURMET BURGERS</h3>
+      </div>
+      <div class="menu-card">
+        <img src="images/wings.jpg" alt="Chicken Wings">
+        <h3>CHICKEN WINGS</h3>
+      </div>
+      <div class="menu-card">
+        <img src="images/drink.jpg" alt="Drinks">
+        <h3>THIRST QUENCHERS</h3>
+      </div>
+    </div>
+    <a href="#" class="btn-red">VIEW FULL MENU</a>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-items">
+      <div class="testimonial">
+        <img src="images/client1.jpg" alt="">
+        <h4>The Online Food Hub</h4>
+        <p>Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <img src="images/client2.jpg" alt="">
+        <h4>Food Pyramid Co.</h4>
+        <p>Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <img src="images/client3.jpg" alt="">
+        <h4>Jul & Sons Co.</h4>
+        <p>Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="footer-img">
+      <img src="images/fried-chicken.jpg" alt="Fried Chicken">
+    </div>
+    <div class="footer-info">
+      <div class="info-block">
+        <h4>OPENING HOURS</h4>
+        <p>Mon - Fri: 7am - 10pm<br>
+           Saturday: 8am - 10pm<br>
+           Sunday: 8am - 11pm</p>
+      </div>
+      <div class="info-block">
+        <h4>LOCATION</h4>
+        <p>123 Anywhere St. Any City, ST 12345</p>
+      </div>
+      <div class="info-block">
+        <h4>FOLLOW US ON</h4>
+        <p>Instagram<br>Facebook<br>Twitter</p>
+      </div>
+      <div class="info-block">
+        <p><a href="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.floating-telegram');
+    if (!btn) return;
+    const href = btn.getAttribute('href') || '';
+    if (href.includes('TELEGRAM_USERNAME')) {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Silakan ganti TELEGRAM_USERNAME pada href dengan username/link Telegram Anda.');
+      });
+    }
+  });
+</script>
+</html>
