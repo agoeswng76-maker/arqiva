@@ -15,7 +15,7 @@
       <a href="#" class="btn-red">ORDER NOW</a>
     </div>
     <div class="hero-img">
-      <img src="https://images.contentful.com/1cj2ge3ast5f/4ETq9ybsnjCsGaailYLOGH/cf7db5b91c85f4ea1e309905a9679809/Ayam_Utuh.jpeg" alt="Chicken Wings">
+      <img src="images/chicken-wings.jpg" alt="Chicken Wings">
     </div>
   </section>
 
@@ -42,7 +42,7 @@
         <h3>GOURMET BURGERS</h3>
       </div>
       <div class="menu-card">
-        <img src="https://images.contentful.com/1cj2ge3ast5f/4ETq9ybsnjCsGaailYLOGH/cf7db5b91c85f4ea1e309905a9679809/Ayam_Utuh.jpeg" alt="Chicken Wings">
+        <img src="images/wings.jpg" alt="Chicken Wings">
         <h3>CHICKEN WINGS</h3>
       </div>
       <div class="menu-card">
@@ -103,20 +103,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating Telegram Button -->
+  <a class="floating-telegram" href="https://t.me/6282224344408" target="_blank" rel="noopener" aria-label="Chat via Telegram">
+    <!-- Telegram SVG icon -->
+    <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path fill="#ffffff" d="M120 0C53.727 0 0 53.727 0 120s53.727 120 120 120 120-53.727 120-120S186.273 0 120 0zm55.449 79.01l-17.06 80.245c-1.292 5.867-4.681 7.326-9.492 4.592l-26.261-19.249-12.654 12.164c-1.395 1.395-2.561 2.561-5.25 2.561l1.884-26.515 48.283-43.622c2.095-1.884-.455-2.93-3.243-1.046l-59.6 37.466-25.655-8.015c-5.554-1.746-5.66-5.554 1.167-8.244l99.67-38.404c4.585-1.792 8.6 1.046 7.956 8.572z"/>
+    </svg>
+  </a>
 </body>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.querySelector('.floating-telegram');
-    if (!btn) return;
-    const href = btn.getAttribute('href') || '';
-    if (href.includes('TELEGRAM_USERNAME')) {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert('Silakan ganti TELEGRAM_USERNAME pada href dengan username/link Telegram Anda.');
-      });
-    }
-  });
-</script>
 </html>
-
-
