@@ -1,0 +1,122 @@
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('https://cdn1-production-images-kly.akamaized.net/hdoW_pIcLKKBxl7ZDKJIYevC0E8=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4770934/original/018943800_1710311605-mountains-8451480_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .overlay-bg {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      padding: 30px;
+    }
+
+    .gallery img {
+      border-radius: 12px;
+      transition: transform 0.5s ease;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: opacity 0.4s ease;
+      border-radius: 12px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      position: relative;
+    }
+
+    .footer::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 3px;
+      background: #00a859;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Responsive Font */
+    h1.display-4 {
+      font-size: 2.2rem;
+    }
+
+    @media (min-width: 768px) {
+      h1.display-4 {
+        font-size: 3rem;
+      }
+    }
+  </style>
+
+.navbar {
+  background: rgba(255,255,255,0.9) !important;
+}
+
+.navbar-brand strong {
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #333 !important;
+}
+
+.nav-link:hover {
+  color: #00a859 !important;
+}
