@@ -167,16 +167,6 @@ a {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .hero, .about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-img img {
-    margin-top: 20px;
-  }
-}
 /* Floating Telegram button */
 .floating-telegram {
   position: fixed;
@@ -195,27 +185,28 @@ a {
   text-decoration: none;
 }
 
-/* Hover & active */
 .floating-telegram:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 12px 30px rgba(0,0,0,0.30);
 }
 
-/* Focus for accessibility */
-.floating-telegram:focus {
-  outline: 3px solid rgba(0,136,204,0.25);
-  outline-offset: 4px;
-}
-
-/* SVG styling */
 .floating-telegram svg {
   width: 28px;
   height: 28px;
   display: block;
-  transform: translateY(1px); /* visual center tweak */
 }
 
-/* Small-screen tweak */
+@media (max-width: 768px) {
+  .hero, .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   .floating-telegram {
     right: 14px;
